@@ -1,0 +1,16 @@
+<html>
+   <body>
+       {% if f1 %}
+         予測結果<br>
+         <img src={{ image_path }}> <br>
+         {{fi}}<br>
+         <hr>
+      {% endif %}
+         ファイルを選択して送信してください<br>
+         <form action = "./" method = "POST"
+            enctype = "multipart/form-data">
+            <input type = "file" name = "file" />
+            <input type = "submit"/>
+         </form>
+   </body>
+</html>
