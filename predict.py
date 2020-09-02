@@ -21,7 +21,7 @@ def upload_file():
 
     if request.method == "POST":
         f = request.files["file"]
-        filepath = "./data/" + datetime.now().strftime("%Y%m%d%H%M%S") + ".csv"
+        filepath = "./data/" + datetime.now().strftime("%Y%m%d%H%M%S")
         f.save(filepath)
 
         image_path = "./result_images/" + datetime.now().strftime("%Y%m%d%H%M%S") + ".png"
